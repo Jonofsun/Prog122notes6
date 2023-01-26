@@ -6,7 +6,34 @@
         xmlns:local="clr-namespace:Prog122notes6"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-    <Grid>
+    <Grid Margin="0,0,0,-16">
+        <RichTextBox Margin="416,32,59,69">
+            <FlowDocument>
+                <Paragraph>
+                    <Run x:Name="rtbRunDisplay" />
+                </Paragraph>
+            </FlowDocument>
+        </RichTextBox>
+        <Canvas Margin="51,32,473,55" Background="#FFAB5151">
+            <Label Content="First Name&#xD;&#xA;" Height="60" Width="139" Canvas.Left="27" Canvas.Top="10" FontSize="18" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+            <Label Content="Last Name&#xA;" Height="60" Width="139" Canvas.Left="27" Canvas.Top="95" FontSize="18" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+            <Label Content="CSI" Height="35" Width="89" Canvas.Left="10" Canvas.Top="194" FontSize="18" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+            <Button Content="Add Student" Canvas.Left="27" Canvas.Top="304" HorizontalAlignment="Left" VerticalAlignment="Top" Width="196" Height="49" Click="Button_Click"/>
+        </Canvas>
+        <Label Content="GenEd&#xA;" FontSize="18" Margin="187,222,473,173"/>
+        <TextBox x:Name="txtFirstName" TextWrapping="Wrap" Text="" Margin="80,84,573,322"/>
+        <TextBox x:Name="txtLastName" TextWrapping="Wrap" Text="" Margin="80,170,573,235"/>
+        <TextBox x:Name="txtCSI" TextWrapping="Wrap" Text="" Margin="80,272,624,134" RenderTransformOrigin="0.826,0.567"/>
+        <TextBox x:Name="txtGenEd" TextWrapping="Wrap" Text="" Margin="203,270,500,136" RenderTransformOrigin="0.5,0.5">
+            <TextBox.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-0.202"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </TextBox.RenderTransform>
+        </TextBox>
 
     </Grid>
 </Window>
